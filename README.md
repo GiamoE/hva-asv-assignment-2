@@ -18,4 +18,4 @@ Download or clone this project and open it using your IDE
 - Use a mock framework create real unitary tests
 - Use a code coverage tool to help you building your tests
 - To follow instructions, see the TODO tab of your IDE, or look for TODO tags into the source-code
-- Use the following link as a usage guide of the Mockito framework: [http://www.vogella.com/tutorials/Mockito/article.html]()
+- Use [this link](http://www.vogella.com/tutorials/Mockito/article.html) as a usage guide of the Mockito framework:
