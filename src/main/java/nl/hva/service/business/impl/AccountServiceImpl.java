@@ -22,7 +22,7 @@ public class AccountServiceImpl implements AccountService {
 
         Account acc = repo.getAccountById(iban);
 
-        if(acc.equals(null)) {
+        if(acc == null) {
             throw new AccountNotFoundException("account with number " + iban + " not found");
         }
 
@@ -31,7 +31,7 @@ public class AccountServiceImpl implements AccountService {
 
     public void deactivate(Account acc) throws AccountInactiveException {
 
-        if(acc.inactive = true) {
+        if(acc.inactive == true) {
             Account changed = repo.setInactive(acc.getIban(), false);
         } else {
             throw new AccountInactiveException("The account " + acc.getIban() + " is already inactive");
@@ -46,7 +46,7 @@ public class AccountServiceImpl implements AccountService {
             throw new AccountInactiveException("Source account " + source.getIban() + " is inactive");
         }
 
-        if(!destination.isInactive()) {
+        if(destination.isInactive()) {
             throw new AccountInactiveException("Destination account " + source.getIban() + " is inactive");
         }
 

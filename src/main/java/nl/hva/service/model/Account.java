@@ -27,7 +27,7 @@ public class Account {
     }
 
     public void deposit(double amount) {
-        balance -= amount;
+        balance += amount;
     }
 
     public void setInactive(boolean active) {
